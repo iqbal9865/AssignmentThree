@@ -16,7 +16,6 @@ console.log(distance);
 //end first problem
 
 
-
 //start second problem
 function budgetCalculator(numOfWatch,numOfPhone,numOfLaptop){
     if(numOfWatch < 0 || numOfPhone < 0 || numOfLaptop < 0){
