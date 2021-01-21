@@ -33,3 +33,32 @@ function budgetCalculator(numOfWatch,numOfPhone,numOfLaptop){
 var totalCost = budgetCalculator(5,4,3);
 console.log(totalCost);
 //end second problem
+
+
+//start third problem
+function hotelCost(day){
+    if(day < 0){
+        return 'Duration Must be a positive number';
+    }
+    var cost = 0;
+    if(day <= 10) {
+        cost = day * 100;
+    }
+    else if(day <= 20){
+        var firstPart = 10 * 100;
+        var remaining = day - 10;
+        var secondPart = remaining * 80;
+        cost = firstPart + secondPart;
+    }
+    else{
+        var firstPart = 10*100;
+        var secondPart = 10*80;
+        var remaining = day-20;
+        var thirdPart = remaining * 50;
+        cost = firstPart + secondPart + thirdPart;
+    }
+    return cost;
+}
+var totalCost = hotelCost(-22);
+console.log(totalCost);
+//end third problem
