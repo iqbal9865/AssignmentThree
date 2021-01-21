@@ -59,6 +59,6 @@ function hotelCost(day){
     }
     return cost;
 }
-var totalCost = hotelCost(-22);
+var totalCost = hotelCost(32);
 console.log(totalCost);
 //end third problem
