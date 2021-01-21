@@ -59,6 +59,19 @@ function hotelCost(day){
     }
     return cost;
 }
-var totalCost = hotelCost(32);
+var totalCost = hotelCost(50);
 console.log(totalCost);
 //end third problem
+
+function megaFriend(friends){
+    var largest = [];
+    for(var i=0; i<friends.length; i++){     
+        if(largest.length < friends[i].length){
+            largest = friends[i];
+        }
+    }
+    return largest;
+}
+var nameContain = ['Iqbal','Emon','Mizanur Rahman Talha','Nahid Hasan', 'Saju','Fahim'];
+var bigName = megaFriend(nameContain);
+console.log(bigName);
