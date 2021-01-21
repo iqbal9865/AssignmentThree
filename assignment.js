@@ -63,15 +63,21 @@ var totalCost = hotelCost(50);
 console.log(totalCost);
 //end third problem
 
+
+//start last problem
 function megaFriend(friends){
-    var largest = [];
+    if(friends == " "){
+        return "invalid string";
+    }
+    var largestName = [];
     for(var i=0; i<friends.length; i++){     
-        if(largest.length < friends[i].length){
-            largest = friends[i];
+        if(largestName.length < friends[i].length){
+            largestName = friends[i];
         }
     }
-    return largest;
+    return largestName;
 }
 var nameContain = ['Iqbal','Emon','Mizanur Rahman Talha','Nahid Hasan', 'Saju','Fahim'];
 var bigName = megaFriend(nameContain);
 console.log(bigName);
+//end last problem
