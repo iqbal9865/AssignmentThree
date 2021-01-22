@@ -3,8 +3,8 @@
 
 //start first problem
 function kilometerToMeter(km){
-    if(km < 0){
-        return 'Please Input a Positive Number';
+    if(km <= 0){
+        return "Distance Must be Positive Number";
     }
     else{
         var meter = km * 1000;
@@ -18,7 +18,7 @@ console.log(distance);
 
 //start second problem
 function budgetCalculator(numOfWatch,numOfPhone,numOfLaptop){
-    if(numOfWatch < 0 || numOfPhone < 0 || numOfLaptop < 0){
+    if(numOfWatch <= 0 || numOfPhone <= 0 || numOfLaptop <= 0){
         return "Invalid Input";
     }
     else{
@@ -36,7 +36,7 @@ console.log(totalCost);
 
 //start third problem
 function hotelCost(day){
-    if(day < 0){
+    if(day <= 0){
         return 'Duration Must be a positive number';
     }
     var cost = 0;
