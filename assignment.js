@@ -11,7 +11,7 @@ function kilometerToMeter(km){
     }
     return meter;
 }
-var distance = kilometerToMeter(19);
+var distance = kilometerToMeter(7);
 console.log(distance);
 //end first problem
 
@@ -29,7 +29,7 @@ function budgetCalculator(numOfWatch,numOfPhone,numOfLaptop){
     }
     return total;
 }
-var totalCost = budgetCalculator(20,17,3);
+var totalCost = budgetCalculator(7,6,5);
 console.log(totalCost);
 //end second problem
 
@@ -58,7 +58,7 @@ function hotelCost(day){
     }
     return cost;
 }
-var totalCost = hotelCost(42);
+var totalCost = hotelCost(33);
 console.log(totalCost);
 //end third problem
 
@@ -69,8 +69,8 @@ function megaFriend(friends){
         return 'Invalid string';
     }
     for(var i=0; i<friends.length; i++){
-        if(friends[i] == ' ' || friends[i] >= 0){
-        return "invalid string";
+        if(friends[i] == ' ' || friends[i] >= 0 || friends[i]<=0){
+        return "Invalid string";
         }
     }
     var largestName = [];
@@ -81,7 +81,7 @@ function megaFriend(friends){
     }
     return largestName;
 }
-var nameContain = ['Iqbal','Emon','Mizanur Rahman Talha','Nahid Hasan','Mohammad Ali Ahsan Riyad', 'Saju','Fahim'];
+var nameContain = ['Nahid Hasan', 'Iqbal Ahmed Emon', 'Hriday','Mizu','Mohammad Nazim Ahmed','Munna'];
 var bigName = megaFriend(nameContain);
 console.log(bigName);
 //end last problem
