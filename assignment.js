@@ -65,8 +65,10 @@ console.log(totalCost);
 
 //start last problem
 function megaFriend(friends){
-    if(friends == "" || friends == ' ' || friends.length == 0 || friends >= 0){
+    for(var i=0; i<friends.length; i++){
+        if(friends[i] == "" || friends[i] == ' ' || friends[i].length == 0 || friends[i] >= 0){
         return "invalid string";
+        }
     }
     var largestName = [];
     for(var i=0; i<friends.length; i++){     
