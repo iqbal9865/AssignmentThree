@@ -7,11 +7,11 @@ function kilometerToMeter(km){
         return 'Please Input a Positive Number';
     }
     else{
-    var meter = km * 1000;
-    return meter;
+        var meter = km * 1000;
     }
+    return meter;
 }
-var distance = kilometerToMeter(7);
+var distance = kilometerToMeter(19);
 console.log(distance);
 //end first problem
 
@@ -26,10 +26,10 @@ function budgetCalculator(numOfWatch,numOfPhone,numOfLaptop){
     var phoneAmount = numOfPhone * 100;
     var laptopAmount = numOfLaptop * 500;
     var total = watchAmount + phoneAmount + laptopAmount;
-    return total;
     }
+    return total;
 }
-var totalCost = budgetCalculator(5,4,3);
+var totalCost = budgetCalculator(20,17,3);
 console.log(totalCost);
 //end second problem
 
@@ -58,7 +58,7 @@ function hotelCost(day){
     }
     return cost;
 }
-var totalCost = hotelCost(50);
+var totalCost = hotelCost(42);
 console.log(totalCost);
 //end third problem
 
@@ -76,7 +76,7 @@ function megaFriend(friends){
     }
     return largestName;
 }
-var nameContain = ['Iqbal','Emon','Mizanur Rahman Talha','Nahid Hasan', 'Saju','Fahim'];
+var nameContain = ['Iqbal','Emon','Mizanur Rahman Talha','Nahid Hasan','Mohammad Ali Ahsan Riyad', 'Saju','Fahim'];
 var bigName = megaFriend(nameContain);
 console.log(bigName);
 //end last problem
